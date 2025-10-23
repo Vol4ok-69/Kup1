@@ -1,1 +1,23 @@
-.metadata
+# === 1C:EDT / Eclipse ===
+
+# Папка рабочей области (НИКОГДА не добавлять в Git)
+/.metadata/
+
+# Локальные настройки платформы
+.platform/
+
+# Папка сборки
+build/
+bin/
+
+# Настройки сборщиков
+.externalToolBuilders/
+
+# Локальные настройки проекта Eclipse
+.settings/
+
+# === Файлы 1С:Предприятия (артефакты сборки) ===
+*.cf
+*.cfu
+*.cfe
+Configuration.xml
