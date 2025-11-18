@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com._1c.g5.v8.dt.launching.mobile.MobileClient">
+    <booleanAttribute key="com._1c.g5.v8.dt.debug.core.ATTR_APPLICATION_USE_DEFAULT" value="true"/>
+    <stringAttribute key="com._1c.g5.v8.dt.debug.core.ATTR_PROJECT_NAME" value="Конфигурация"/>
+    <booleanAttribute key="com._1c.g5.v8.dt.debug.core.ATTR_RUNTIME_INSTALLATION_USE_AUTO" value="true"/>
+    <stringAttribute key="com._1c.g5.v8.dt.debug.core.ATTR_USE_LOCAL_DEBUG_SERVER" value="AUTO"/>
+    <stringAttribute key="com._1c.g5.v8.dt.launching.mobile.ATTR_MOBILE_OS" value="com._1c.g5.v8.dt.platform.services.mobile.mobileOs.Android"/>
+    <stringAttribute key="com._1c.g5.v8.dt.launching.mobile.ATTR_MOBILE_PLATFORM" value="com._1c.g5.v8.dt.platform.services.core.resolvableInstallations.environments:com._1c.g5.v8.dt.platform.services.mobile.runtimeType.MobilePlatform=8.3.21"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Конфигурация"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.ATTR_CONSOLE_ENCODING" value="IBM866"/>
+    <stringAttribute key="process_factory_id" value="com._1c.g5.v8.dt.debug.core.RuntimeProcessFactory"/>
+</launchConfiguration>

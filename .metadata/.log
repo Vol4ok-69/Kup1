@@ -1,0 +1,1775 @@
+!SESSION 2025-10-16 22:16:02.904 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-16 22:16:07.637
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-16 22:16:07.643
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-16 22:16:08.114
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-16 22:16:09.002
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY com.e1c.g5.v8.dt.platform.standaloneserver.wst.core 1 0 2025-10-16 22:16:09.313
+!MESSAGE Начат однократный процесс перевода на новую версию: Переключение на сервер отладки, встроенный в автономный сервер.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-10-16 22:16:12.824
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-16 22:16:13.347
+!MESSAGE Файл настроек программы запуска 1С:Предприятие не существует. Невозможно загрузить из него местонахождение списка зарегистрированных информационных баз: C:\ProgramData\Application Data\1C\1CEStart\1cestart.cfg
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-16 22:16:13.348
+!MESSAGE Файл настроек программы запуска 1С:Предприятие не существует. Невозможно загрузить из него местонахождение списка зарегистрированных информационных баз: C:\Users\ivank\AppData\Roaming\1C\1CEStart\1cestart.cfg
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-16 22:16:15.383
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-16 22:16:15.384
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2025-10-16 22:17:33.035
+!MESSAGE Создание информационной базы невозможно
+!STACK 0
+com._1c.g5.v8.dt.platform.services.core.runtimes.environments.MatchingRuntimeNotFound: Не найдено подходящих версий платформы для маски версии "8.3".
+Возможно, необходимые версии установлены в системе, но не зарегистрированы.
+Чтобы проверить список зарегистрированных версий платформы, нажмите на кнопку "Версии платформы...".
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentInstallationResolver.filterVersionMaskSupportedInstallations(ExecutionEnvironmentInstallationResolver.java:145)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentInstallationResolver.resolve(ExecutionEnvironmentInstallationResolver.java:57)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentProvider.get(ExecutionEnvironmentProvider.java:166)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentProvider.get(ExecutionEnvironmentProvider.java:150)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironment.get(ExecutionEnvironment.java:125)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.environments.ExecutionEnvironmentResolvable.get(ExecutionEnvironmentResolvable.java:85)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:412)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 4 0 2025-10-16 22:18:12.440
+!MESSAGE Ошибка поиска вложенных директорий
+!STACK 0
+java.nio.file.AccessDeniedException: C:\$Recycle.Bin\S-1-5-18
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsDirectoryStream.<init>(WindowsDirectoryStream.java:86)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newDirectoryStream(WindowsFileSystemProvider.java:541)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:482)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:301)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:374)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2833)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.AbstractRuntimeInstallationLookup.getNestedLocations(AbstractRuntimeInstallationLookup.java:179)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.AbstractRuntimeInstallationLookup.lookup(AbstractRuntimeInstallationLookup.java:67)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.CompositeRuntimeInstallationLookup.lookup(CompositeRuntimeInstallationLookup.java:88)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.RuntimeInstallationManager.search(RuntimeInstallationManager.java:186)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.IRuntimeInstallationManager$pbryglu.search(Unknown Source)
+	at com._1c.g5.v8.dt.platform.services.ui.runtimes.AbstractRuntimeInstallationPreferencePage.lambda$11(AbstractRuntimeInstallationPreferencePage.java:781)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.047
+!MESSAGE Help index declared, but missing for plugin com._1c.g5.v8.dt.platform.doc_v8_3_8.
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.060
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_20
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.069
+!MESSAGE Help index declared, but missing for plugin com._1c.g5.v8.dt.platform.doc_v8_3_9.
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.079
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_16
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.088
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_17
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.096
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_14
+
+!ENTRY org.eclipse.help.base 2 0 2025-10-16 22:24:43.105
+!MESSAGE Unable to consume Lucene index from bundle 'com._1c.g5.v8.dt.platform.doc_v8_3_25_1.0.0.v202411012232 [296]'. The index should be rebuilt with Lucene 9.8.0
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.115
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_15
+
+!ENTRY org.eclipse.help.base 2 0 2025-10-16 22:24:43.121
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.server.ui.doc.user_1.1.600.v201901310132 [1177]'. The index should be rebuilt with Lucene 9.8.0
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.131
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_12
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.142
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_23
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.152
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_13
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.168
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_24
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.179
+!MESSAGE Help index declared, but missing for plugin com._1c.g5.v8.dt.platform.doc_v8_3_10.
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.187
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_21
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.196
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_11
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.210
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_22
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.221
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_18
+
+!ENTRY org.eclipse.help.base 4 0 2025-10-16 22:24:43.231
+!MESSAGE nl/ru/index/indexed_dependencies file missing from help index "index" of plugin com._1c.g5.v8.dt.platform.doc_v8_3_19
+
+!ENTRY org.eclipse.help.base 4 4 2025-10-16 22:24:55.730
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2025-10-16 22:24:55.731
+!MESSAGE Help document /com.e1c.ssl.docs/html/common-client-arrays-difference.html cannot be opened.
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2025-10-16 22:47:44.019
+!MESSAGE Создание информационной базы невозможно
+!STACK 0
+com._1c.g5.v8.dt.platform.services.core.runtimes.environments.MatchingRuntimeNotFound: Не найдено подходящих версий платформы для маски версии "8.3".
+Возможно, необходимые версии установлены в системе, но не зарегистрированы.
+Чтобы проверить список зарегистрированных версий платформы, нажмите на кнопку "Версии платформы...".
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentInstallationResolver.filterVersionMaskSupportedInstallations(ExecutionEnvironmentInstallationResolver.java:145)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentInstallationResolver.resolve(ExecutionEnvironmentInstallationResolver.java:57)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentProvider.get(ExecutionEnvironmentProvider.java:166)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironmentProvider.get(ExecutionEnvironmentProvider.java:150)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.environments.ExecutionEnvironment.get(ExecutionEnvironment.java:125)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.environments.ExecutionEnvironmentResolvable.get(ExecutionEnvironmentResolvable.java:85)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:412)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 4 0 2025-10-16 22:50:11.567
+!MESSAGE Ошибка поиска вложенных директорий
+!STACK 0
+java.nio.file.AccessDeniedException: C:\$Recycle.Bin\S-1-5-18
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsDirectoryStream.<init>(WindowsDirectoryStream.java:86)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newDirectoryStream(WindowsFileSystemProvider.java:541)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:482)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:301)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:374)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2833)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.AbstractRuntimeInstallationLookup.getNestedLocations(AbstractRuntimeInstallationLookup.java:179)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.AbstractRuntimeInstallationLookup.lookup(AbstractRuntimeInstallationLookup.java:67)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.CompositeRuntimeInstallationLookup.lookup(CompositeRuntimeInstallationLookup.java:88)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.RuntimeInstallationManager.search(RuntimeInstallationManager.java:186)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.IRuntimeInstallationManager$pbryglu.search(Unknown Source)
+	at com._1c.g5.v8.dt.platform.services.ui.runtimes.AbstractRuntimeInstallationPreferencePage.lambda$11(AbstractRuntimeInstallationPreferencePage.java:781)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-17 00:08:48.529
+!MESSAGE CPU overload. Memory 3870639376 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-17 10:24:50.544
+!MESSAGE Critical CPU overload. Memory 3870639376 used of 4294967296
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-17 10:26:25.383
+!MESSAGE EDT закрывается
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2025-10-17 10:26:26.196
+!MESSAGE Saving dialog settings
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-17 10:26:28.199
+!MESSAGE All known SSH connectons released
+!SESSION 2025-10-17 12:48:42.368 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:50:00.140
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:50:00.152
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-17 12:50:00.751
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-17 12:50:01.490
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-10-17 12:50:08.109
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-17 12:50:11.700
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-17 12:50:11.701
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2025-10-17 12:56:35.963
+!MESSAGE Создание информационной базы невозможно
+!STACK 0
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.21.1644:
+Журнал процесса платформы [код ошибки 1]:
+Создание информационной базы ("File="C:\Users\ivank\Documents\InfoBase3";Locale="ru_RU";DBMS="MSSQLServer";") успешно завершено
+Информационная база с указанным именем или параметрами соединения уже зарегистрирована
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:381)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:102)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:91)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$12(DesignerSessionThickClientLauncher.java:347)
+	at com._1c.g5.v8.dt.common.runtime.ProgressMonitors.computeInSubTask(ProgressMonitors.java:412)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:364)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:345)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:452)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 4 0 2025-10-17 12:56:57.074
+!MESSAGE Создание информационной базы невозможно
+!STACK 0
+com._1c.g5.v8.dt.platform.services.core.runtimes.execution.RuntimeExecutionException: Ошибка взаимодействия с платформой 1С:Предприятия 8.3.21.1644:
+Журнал процесса платформы [код ошибки 1]:
+Указанная информационная база уже существует.
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:381)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.AbstractRuntimeComponentExecutor.executeRuntimeProcessCommand(AbstractRuntimeComponentExecutor.java:102)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.ThickClientLauncher.createInfobase(ThickClientLauncher.java:91)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.lambda$12(DesignerSessionThickClientLauncher.java:347)
+	at com._1c.g5.v8.dt.common.runtime.ProgressMonitors.computeInSubTask(ProgressMonitors.java:412)
+	at com._1c.g5.v8.dt.internal.platform.services.core.runtimes.execution.DesignerSessionOperationSupport.execOutOfDesignerSession(DesignerSessionOperationSupport.java:364)
+	at com._1c.g5.v8.dt.platform.services.core.runtimes.execution.impl.DesignerSessionThickClientLauncher.createInfobase(DesignerSessionThickClientLauncher.java:345)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.createSection(InfobaseWizard.java:452)
+	at com._1c.g5.v8.dt.internal.platform.services.ui.infobases.wizard.InfobaseWizard.lambda$3(InfobaseWizard.java:160)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.equinox.security 1 0 2025-10-17 12:57:49.798
+!MESSAGE New keyring password generated. 
+
+!ENTRY com._1c.g5.v8.dt.md.ui 1 0 2025-10-17 12:59:10.602
+!MESSAGE Создается новый проект кофигурации Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:59:10.677
+!MESSAGE Project context is being started: Конфигурация (NEW_PROJECT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:12.110
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:12.110
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.md.ui 4 0 2025-10-17 12:59:12.575
+!MESSAGE Failed to integrate the model
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to integrate the model
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:171)
+	at com._1c.g5.v8.dt.md.ui.wizards.base.DtNewWizard.performFinish(DtNewWizard.java:237)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:102)
+	at com._1c.g5.v8.dt.navigator.ui.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:321)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:397)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1038)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:153)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: The 'project' argument cannot be 'null'
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.stopProject(WorkspaceOrchestrator.java:217)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.cleanUpProjectContext(ConfigurationProjectManager.java:823)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:649)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 com._1c.g5.v8.dt.md.ui 4 0 2025-10-17 12:59:12.575
+!MESSAGE Failed to integrate the model
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:397)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1038)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:153)
+	at com._1c.g5.v8.dt.md.ui.wizards.base.DtNewWizard.performFinish(DtNewWizard.java:237)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:102)
+	at com._1c.g5.v8.dt.navigator.ui.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:321)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.lang.IllegalArgumentException: The 'project' argument cannot be 'null'
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.stopProject(WorkspaceOrchestrator.java:217)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.cleanUpProjectContext(ConfigurationProjectManager.java:823)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:649)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Root exception:
+java.lang.IllegalArgumentException: The 'project' argument cannot be 'null'
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:68)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.stopProject(WorkspaceOrchestrator.java:217)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.cleanUpProjectContext(ConfigurationProjectManager.java:823)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:649)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.md.ui 1 0 2025-10-17 12:59:14.716
+!MESSAGE Создается новый проект кофигурации Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:59:14.741
+!MESSAGE Попытка удаления проекта: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.md.ui 4 0 2025-10-17 12:59:14.762
+!MESSAGE Ресурс /Конфигурация уже существует.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Конфигурация)[374]: java.lang.Exception: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:94)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.lambda$0(V8ProjectCreator.java:90)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.create(V8ProjectCreator.java:74)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.lambda$0(ConfigurationProjectManager.java:631)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:628)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 4 374 2025-10-17 12:59:14.763
+!MESSAGE Ресурс /Конфигурация уже существует.
+!STACK 0
+java.lang.Exception: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:94)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.lambda$0(V8ProjectCreator.java:90)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.create(V8ProjectCreator.java:74)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.lambda$0(ConfigurationProjectManager.java:631)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:628)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.md.ui 4 0 2025-10-17 12:59:14.790
+!MESSAGE Failed to integrate the model
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to integrate the model
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:171)
+	at com._1c.g5.v8.dt.md.ui.wizards.base.DtNewWizard.performFinish(DtNewWizard.java:237)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:837)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:473)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:102)
+	at com._1c.g5.v8.dt.navigator.ui.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:321)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:161)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:94)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.lambda$0(V8ProjectCreator.java:90)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.create(V8ProjectCreator.java:74)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.lambda$0(ConfigurationProjectManager.java:631)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:628)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	... 1 more
+Caused by: java.lang.Exception: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 19 more
+!SUBENTRY 1 com._1c.g5.v8.dt.md.ui 4 0 2025-10-17 12:59:14.791
+!MESSAGE Failed to integrate the model
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:161)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:94)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.lambda$0(V8ProjectCreator.java:90)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.create(V8ProjectCreator.java:74)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.lambda$0(ConfigurationProjectManager.java:631)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:628)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	... 1 more
+Caused by: java.lang.Exception: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 19 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException(/Конфигурация)[374]: java.lang.Exception: Ресурс /Конфигурация уже существует.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:346)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:333)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:94)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.lambda$0(V8ProjectCreator.java:90)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.V8ProjectCreator.create(V8ProjectCreator.java:74)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.lambda$0(ConfigurationProjectManager.java:631)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.createProject(ConfigurationProjectManager.java:628)
+	at com._1c.g5.v8.dt.internal.core.platform.ConfigurationProjectManager.create(ConfigurationProjectManager.java:189)
+	at com._1c.g5.v8.dt.core.platform.IConfigurationProjectManager$pbryglu.create(Unknown Source)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.createProject(ConfigurationWizard.java:220)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.integrateModel(ConfigurationWizard.java:96)
+	at com._1c.g5.v8.dt.md.ui.wizards.ConfigurationWizard.lambda$0(ConfigurationWizard.java:156)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY com._1c.g5.v8.dt.md.ui 1 0 2025-10-17 12:59:17.920
+!MESSAGE Создается новый проект кофигурации Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:59:17.940
+!MESSAGE Project context is being started: Конфигурация (NEW_PROJECT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:17.944
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:17.944
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-17 12:59:17.950
+!MESSAGE Stale DD provider found: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:18.087
+!MESSAGE Starting phase CHECKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:18.096
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:18.483
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-17 12:59:18.587
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 12:59:18.782
+!MESSAGE Project context is started: Конфигурация
+
+!ENTRY org.eclipse.equinox.security 1 0 2025-10-17 12:59:23.024
+!MESSAGE New keyring password generated. 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-17 12:59:23.158
+!MESSAGE SSH connecton with infobase Информационная база699 established.
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 4 0 2025-10-17 12:59:23.190
+!MESSAGE Project Конфигурация should have persisted synchronization state, but persisted state not found. Unsynchronized state will be used.
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-17 13:18:20.548
+!MESSAGE CPU overload. Memory 4108014728 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-17 13:50:50.532
+!MESSAGE CPU overload. Memory 4116534152 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-17 14:20:09.516
+!MESSAGE CPU overload. Memory 4118482400 used of 4294967296
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-17 14:58:57.951
+!MESSAGE EDT закрывается
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-17 14:58:57.958
+!MESSAGE Существующий проект (на закрытии): Конфигурация, открыт: true
+
+!ENTRY org.eclipse.ui 4 0 2025-10-17 14:58:59.517
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.model.application.ui.basic.MWindow.getContext()" because "window" is null
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:567)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4746)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.ole.win32.COM.VtblCall(Native Method)
+	at org.eclipse.swt.internal.ole.win32.ITaskbarList3.SetOverlayIcon(ITaskbarList3.java:31)
+	at org.eclipse.swt.widgets.TaskItem.destroyWidget(TaskItem.java:112)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:831)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.TaskItem$1.handleEvent(TaskItem.java:469)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2089)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1721)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1134)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1117)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1418)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1418)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1394)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1718)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1754)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:505)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4746)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-10-17 14:58:59.636
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Decorations.getMinimized(Decorations.java:622)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$7(WBWRenderer.java:719)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2089)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1721)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1134)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1117)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1418)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1418)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1394)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1718)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1754)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:505)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4746)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-10-17 14:58:59.643
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Widget.removeListener(Widget.java:936)
+	at org.eclipse.swt.dnd.DropTarget.onDispose(DropTarget.java:577)
+	at org.eclipse.swt.dnd.DropTarget.lambda$1(DropTarget.java:156)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.dnd.DropTarget.lambda$0(DropTarget.java:151)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:183)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:938)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:2089)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1721)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1134)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1117)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1418)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1418)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1394)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1718)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1745)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1745)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1754)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:505)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4746)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4845)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2305)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2025-10-17 14:58:59.979
+!MESSAGE Saving dialog settings
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 14:59:01.519
+!MESSAGE Project context is being stopped: Конфигурация (IDE_SHUTDOWN)-(com._1c.g5.v8.dt.core.platform.workspace-project)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-17 14:59:03.052
+!MESSAGE Disconnecting project Конфигурация and infobase Информационная база699 configuration
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-17 14:59:03.802
+!MESSAGE Project context is stopped: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-17 14:59:05.813
+!MESSAGE All known SSH connectons released
+!SESSION 2025-10-23 18:24:50.282 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:25:16.776
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:25:16.795
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 18:25:17.250
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-23 18:25:18.030
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-10-23 18:25:21.975
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-23 18:25:25.509
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-23 18:25:25.510
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:25:26.019
+!MESSAGE Project context is being started: Конфигурация (EXISTING_DATA_IMPORT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.107
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.107
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-23 18:25:28.444
+!MESSAGE Запрошено восстановление проектов по причине ошибок, возникших в DefaultContextStartJob
+!STACK 0
+com._1c.g5.v8.dt.lifecycle.LifecycleException: Failed to perform phase INITIALIZATION for context ProjectContext: Конфигурация
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:281)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startContext(ServicesOrchestrator.java:209)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startServices(ServicesOrchestrator.java:78)
+	at com._1c.g5.v8.dt.lifecycle.IServicesOrchestrator$pbryglu.startServices(Unknown Source)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startContext(WorkspaceOrchestrator.java:822)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startWorkspaceProjects(WorkspaceOrchestrator.java:408)
+	at com._1c.g5.v8.dt.internal.core.lifecycle.DtProjectResourceLifecycleBootstrap$DefaultContextsStartJob.run(DtProjectResourceLifecycleBootstrap.java:420)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.RuntimeException: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:224)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:1)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:270)
+	... 7 more
+Caused by: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.core.environmentchecker.EnvironmentCheckerService.init(EnvironmentCheckerService.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:214)
+	... 9 more
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:25:28.585
+!MESSAGE Project context is being started: Конфигурация (CLEAN_IMPORT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.588
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.589
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-23 18:25:28.598
+!MESSAGE Stale DD provider found: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.632
+!MESSAGE Starting phase CHECKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:28.638
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:29.243
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 18:25:37.992
+!MESSAGE SSH connecton with infobase Информационная база699 established.
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 18:25:38.411
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:25:38.580
+!MESSAGE Project context is started: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 1 0 2025-10-23 18:43:01.856
+!MESSAGE Платформа 1С:Предприятия запрашивает подтверждение реструктуризации базы данных для следующих изменений:
+Новый объект: Документ.Документ
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 1 0 2025-10-23 18:43:47.844
+!MESSAGE Платформа 1С:Предприятия запрашивает подтверждение реструктуризации базы данных для следующих изменений:
+Объект удален: Документ.Документ
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-23 18:52:11.057
+!MESSAGE EDT закрывается
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-23 18:52:11.057
+!MESSAGE Существующий проект (на закрытии): Конфигурация, открыт: true
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2025-10-23 18:52:11.531
+!MESSAGE Saving dialog settings
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:52:11.939
+!MESSAGE Project context is being stopped: Конфигурация (IDE_SHUTDOWN)-(com._1c.g5.v8.dt.core.platform.workspace-project)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 18:52:12.070
+!MESSAGE Disconnecting project Конфигурация and infobase Информационная база699 configuration
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 18:52:12.115
+!MESSAGE Project context is stopped: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 18:52:12.461
+!MESSAGE All known SSH connectons released
+!SESSION 2025-10-23 19:18:47.085 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:20:20.946
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:20:20.961
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 19:20:21.475
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-23 19:20:22.328
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-10-23 19:20:26.074
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:20:28.029
+!MESSAGE Project context is being started: Конфигурация (EXISTING_DATA_IMPORT)
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-23 19:20:28.571
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-23 19:20:28.572
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:30.931
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:30.932
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-23 19:20:31.209
+!MESSAGE Запрошено восстановление проектов по причине ошибок, возникших в DefaultContextStartJob
+!STACK 0
+com._1c.g5.v8.dt.lifecycle.LifecycleException: Failed to perform phase INITIALIZATION for context ProjectContext: Конфигурация
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:281)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startContext(ServicesOrchestrator.java:209)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startServices(ServicesOrchestrator.java:78)
+	at com._1c.g5.v8.dt.lifecycle.IServicesOrchestrator$pbryglu.startServices(Unknown Source)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startContext(WorkspaceOrchestrator.java:822)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startWorkspaceProjects(WorkspaceOrchestrator.java:408)
+	at com._1c.g5.v8.dt.internal.core.lifecycle.DtProjectResourceLifecycleBootstrap$DefaultContextsStartJob.run(DtProjectResourceLifecycleBootstrap.java:420)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.RuntimeException: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:224)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:1)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:270)
+	... 7 more
+Caused by: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.core.environmentchecker.EnvironmentCheckerService.init(EnvironmentCheckerService.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:214)
+	... 9 more
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:20:31.335
+!MESSAGE Project context is being started: Конфигурация (CLEAN_IMPORT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:31.337
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:31.338
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-23 19:20:31.354
+!MESSAGE Stale DD provider found: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:31.379
+!MESSAGE Starting phase CHECKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:31.384
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:31.873
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 19:20:44.512
+!MESSAGE SSH connecton with infobase Информационная база699 established.
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-23 19:20:44.869
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:20:45.035
+!MESSAGE Project context is started: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-23 19:23:09.466
+!MESSAGE EDT закрывается
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-23 19:23:09.477
+!MESSAGE Существующий проект (на закрытии): Конфигурация, открыт: true
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2025-10-23 19:23:09.885
+!MESSAGE Saving dialog settings
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:23:10.020
+!MESSAGE Project context is being stopped: Конфигурация (IDE_SHUTDOWN)-(com._1c.g5.v8.dt.core.platform.workspace-project)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 19:23:10.165
+!MESSAGE Disconnecting project Конфигурация and infobase Информационная база699 configuration
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-23 19:23:10.252
+!MESSAGE Project context is stopped: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-23 19:23:10.537
+!MESSAGE All known SSH connectons released
+!SESSION 2025-10-29 13:31:27.187 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 13:33:18.381
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 13:33:18.469
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-29 13:33:21.290
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-10-29 13:33:23.612
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-10-29 13:33:36.317
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 13:33:50.037
+!MESSAGE Project context is being started: Конфигурация (EXISTING_DATA_IMPORT)
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-29 13:34:01.757
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-10-29 13:34:01.757
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:04.361
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:04.361
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-29 13:34:05.729
+!MESSAGE Запрошено восстановление проектов по причине ошибок, возникших в DefaultContextStartJob
+!STACK 0
+com._1c.g5.v8.dt.lifecycle.LifecycleException: Failed to perform phase INITIALIZATION for context ProjectContext: Конфигурация
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:281)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startContext(ServicesOrchestrator.java:209)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startServices(ServicesOrchestrator.java:78)
+	at com._1c.g5.v8.dt.lifecycle.IServicesOrchestrator$pbryglu.startServices(Unknown Source)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startContext(WorkspaceOrchestrator.java:822)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startWorkspaceProjects(WorkspaceOrchestrator.java:408)
+	at com._1c.g5.v8.dt.internal.core.lifecycle.DtProjectResourceLifecycleBootstrap$DefaultContextsStartJob.run(DtProjectResourceLifecycleBootstrap.java:420)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.RuntimeException: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:224)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:1)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:270)
+	... 7 more
+Caused by: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.core.environmentchecker.EnvironmentCheckerService.init(EnvironmentCheckerService.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:214)
+	... 9 more
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 13:34:05.955
+!MESSAGE Project context is being started: Конфигурация (CLEAN_IMPORT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:05.969
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:05.969
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-10-29 13:34:06.033
+!MESSAGE Stale DD provider found: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:06.112
+!MESSAGE Starting phase CHECKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:06.128
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:10.110
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-29 13:34:30.630
+!MESSAGE SSH connecton with infobase Информационная база699 established.
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-10-29 13:34:32.499
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 13:34:33.277
+!MESSAGE Project context is started: Конфигурация
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-29 14:15:58.501
+!MESSAGE CPU overload. Memory 4128214528 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-29 15:00:17.788
+!MESSAGE CPU overload. Memory 4145298320 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-29 15:44:33.546
+!MESSAGE CPU overload. Memory 4167148952 used of 4294967296
+
+!ENTRY com._1c.g5.v8.internal.resourcemanagement.ResourceManagementPlugin 2 0 2025-10-29 15:44:48.616
+!MESSAGE Critical CPU overload. Memory 4169174680 used of 4294967296
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-29 15:49:28.351
+!MESSAGE EDT закрывается
+
+!ENTRY com._1c.g5.v8.dt.ui 1 0 2025-10-29 15:49:28.355
+!MESSAGE Существующий проект (на закрытии): Конфигурация, открыт: true
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2025-10-29 15:49:33.188
+!MESSAGE Saving dialog settings
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 15:49:34.666
+!MESSAGE Project context is being stopped: Конфигурация (IDE_SHUTDOWN)-(com._1c.g5.v8.dt.core.platform.workspace-project)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-29 15:49:36.020
+!MESSAGE Disconnecting project Конфигурация and infobase Информационная база699 configuration
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-10-29 15:49:37.001
+!MESSAGE Project context is stopped: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-10-29 15:49:39.396
+!MESSAGE All known SSH connectons released
+!SESSION 2025-11-18 19:07:04.683 -----------------------------------------------
+eclipse.buildId=2024.1.3.13
+java.version=21.0.8
+java.vendor=BellSoft
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\ivank\Desktop\Учёба\1c великий\1c_EDT\Kup1
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-11-18 19:09:51.517
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-11-18 19:09:51.564
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-11-18 19:09:52.835
+!MESSAGE Trying to re-establish all non-closed SSH connecton...
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2025-11-18 19:09:54.817
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1170)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:471)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:506)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:159)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+	... 19 more
+
+!ENTRY org.eclipse.ui.navigator 4 0 2025-11-18 19:10:04.357
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-11-18 19:10:08.330
+!MESSAGE Project context is being started: Конфигурация (EXISTING_DATA_IMPORT)
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-11-18 19:10:09.742
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2025-11-18 19:10:09.745
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:13.584
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:13.586
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-11-18 19:10:14.486
+!MESSAGE Запрошено восстановление проектов по причине ошибок, возникших в DefaultContextStartJob
+!STACK 0
+com._1c.g5.v8.dt.lifecycle.LifecycleException: Failed to perform phase INITIALIZATION for context ProjectContext: Конфигурация
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:281)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startContext(ServicesOrchestrator.java:209)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.startServices(ServicesOrchestrator.java:78)
+	at com._1c.g5.v8.dt.lifecycle.IServicesOrchestrator$pbryglu.startServices(Unknown Source)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startContext(WorkspaceOrchestrator.java:822)
+	at com._1c.g5.v8.dt.internal.core.platform.WorkspaceOrchestrator.startWorkspaceProjects(WorkspaceOrchestrator.java:408)
+	at com._1c.g5.v8.dt.internal.core.lifecycle.DtProjectResourceLifecycleBootstrap$DefaultContextsStartJob.run(DtProjectResourceLifecycleBootstrap.java:420)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.RuntimeException: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:224)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:1)
+	at com._1c.g5.v8.dt.internal.lifecycle.ServicesOrchestrator.performPhase(ServicesOrchestrator.java:270)
+	... 7 more
+Caused by: com._1c.g5.v8.dt.internal.core.environmentchecker.UnsupportedJavaVersion: Current Java version is not supported
+	at com._1c.g5.v8.dt.internal.core.environmentchecker.EnvironmentCheckerService.init(EnvironmentCheckerService.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com._1c.g5.v8.dt.internal.lifecycle.AnnotationRegistration$LifecyclePhaseParticipantMethodInvocation.accept(AnnotationRegistration.java:214)
+	... 9 more
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-11-18 19:10:14.706
+!MESSAGE Project context is being started: Конфигурация (CLEAN_IMPORT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:14.716
+!MESSAGE Starting phase LINKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:14.718
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 4 0 2025-11-18 19:10:14.754
+!MESSAGE Stale DD provider found: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:14.827
+!MESSAGE Starting phase CHECKING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:14.845
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:16.191
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 1 0 2025-11-18 19:10:33.382
+!MESSAGE SSH connecton with infobase Информационная база699 established.
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2025-11-18 19:10:34.266
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: Конфигурация
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2025-11-18 19:10:34.619
+!MESSAGE Project context is started: Конфигурация
+
+!ENTRY org.eclipse.ui 4 0 2025-11-18 19:30:57.545
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Widget.isListening(Widget.java:723)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7144)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8029)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:1835)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:6918)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5720)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-11-18 19:31:01.864
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Widget.isListening(Widget.java:723)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7144)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8029)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2035)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5716)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-11-18 19:33:37.161
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Widget.isListening(Widget.java:723)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7144)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8029)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:1835)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:6918)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5720)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.ui 4 0 2025-11-18 19:33:40.750
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Widget.isListening(Widget.java:723)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7144)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8029)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2035)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5716)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4866)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4744)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5039)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 1 0 2025-11-18 20:15:18.818
+!MESSAGE Платформа 1С:Предприятия запрашивает подтверждение реструктуризации базы данных для следующих изменений:
+Новый объект: Документ.ОбъявлениеТовара
+Новый объект: Справочник.Города
+Новый объект: Справочник.КатегорииТоваров
+Новый объект: Справочник.Пользователи
+Новый объект: Перечисление.СтатусОбъявленияТовара
+Новый объект: Перечисление.СтатусПользователя
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 1 0 2025-11-18 20:21:13.919
+!MESSAGE Платформа 1С:Предприятия запрашивает подтверждение реструктуризации базы данных для следующих изменений:
+Объект изменен: Документ.ОбъявлениеТовара

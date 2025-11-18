@@ -39,4 +39,10 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <catalogs>Catalog.Города</catalogs>
+  <catalogs>Catalog.КатегорииТоваров</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <documents>Document.ОбъявлениеТовара</documents>
+  <enums>Enum.СтатусОбъявленияТовара</enums>
+  <enums>Enum.СтатусПользователя</enums>
 </mdclass:Configuration>

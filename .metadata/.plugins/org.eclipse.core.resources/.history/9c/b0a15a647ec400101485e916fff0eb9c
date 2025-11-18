@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2989aad-bf76-47f3-a5f5-dfbe7acc8099">
+  <producedTypes>
+    <refType typeId="7f2b4cb2-6ac3-4e5c-81c7-2eca3e2811c8" valueTypeId="6c881caa-5c52-4d71-8772-2a9ee4a7c81b"/>
+    <listType typeId="7e95d095-6372-436b-bbdd-b0a6ca5b89a6" valueTypeId="98f964f7-fce2-4dd9-8a7d-150b22a41465"/>
+    <managerType typeId="4721fe4f-bd89-4a66-8b5b-296ffcce6cb4" valueTypeId="a1fa6424-55df-4758-a2d6-abca37348a82"/>
+  </producedTypes>
+  <name>СтатусПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус пользователя</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="66aa3887-8326-419d-b8db-b0dde0bb3ad8">
+    <name>Активный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активный</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

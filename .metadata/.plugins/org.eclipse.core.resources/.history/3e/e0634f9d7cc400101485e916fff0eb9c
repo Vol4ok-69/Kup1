@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee9890f4-231c-4fcc-ae6f-e27d5607c8f3">
+  <producedTypes>
+    <objectType typeId="75c3f2c3-660c-4df1-b97d-7b344adf795b" valueTypeId="9d81589b-aea6-4702-a59d-e43ccf418524"/>
+    <refType typeId="6c48cddd-f34d-4541-8278-1a306f8c64cc" valueTypeId="274bf76c-0c1c-44c4-96c5-f56b4186944c"/>
+    <selectionType typeId="50b4d661-a154-44e6-9193-b0c88d97c2d3" valueTypeId="7979d956-942d-4e27-ae29-16ddee7d78ee"/>
+    <listType typeId="deb9f8c6-8e58-4ccf-9d35-1aab770fe1d2" valueTypeId="e5a11600-9c4f-4b71-a4a9-094dc1dd226e"/>
+    <managerType typeId="81ddf5a1-4c78-4587-9896-bdb8ce3b1bad" valueTypeId="c7eeda71-7760-46db-93dd-5f4b2cfdeb93"/>
+  </producedTypes>
+  <name>Города</name>
+  <synonym>
+    <key>ru</key>
+    <value>Города</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Города.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Города.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="9be15261-7ccd-4cb4-b3d1-65b87b126dd1">
+    <name>КодРегиона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код региона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="216ef7d5-3bb6-4d1c-b5a2-6d1047ae5010">
+    <name>Координаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Координаты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

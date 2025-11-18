@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd482284-5c64-44ae-a4fe-5ca9de8c80e1">
+  <producedTypes>
+    <objectType typeId="bf6011c1-7195-4a8e-acbb-a2f101a9ca72" valueTypeId="9993be1f-8074-44ad-852f-99a410d2adde"/>
+    <refType typeId="33d3eea2-2b78-46fa-83b9-7a4401aae753" valueTypeId="d7681049-402b-4c30-8db3-0a58884a2d87"/>
+    <selectionType typeId="d2edbb3d-1b0e-48b4-b34e-467307900df3" valueTypeId="648f9ce0-a4d5-41fb-b634-b1f670c0d0d0"/>
+    <listType typeId="d3811b84-afb7-4614-994e-15e106dea975" valueTypeId="eb6e1c82-9d70-4421-9d87-e7eb7c205c81"/>
+    <managerType typeId="fcca67cd-b3d5-4f12-aef4-8e2fdd33a2c7" valueTypeId="1e5cfeec-18d6-4b7f-8218-2fd19e8ca721"/>
+  </producedTypes>
+  <name>КатегорииТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииТоваров.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.КатегорииТоваров.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c81d0b23-122a-4017-9668-4309de459f4e">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2eaa6ee3-406b-4a15-aa87-4300efc97d7a">
+    <name>ИзображениеКатегории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение категории</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="205c6f49-2700-45ea-95b9-3928222f680f">
+    <name>Активна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
